@@ -1,0 +1,71 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
+input, button, select, textarea {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;	
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar-inner {
+	min-height: 40px;
+	padding: 15px 20px;
+}
+
+.navbar-inverse {
+	.nav {
+		.active {
+			a {
+				background: none;
+			}
+		}
+		li {
+			button {
+				height: 40px;
+				padding: 0 20px;
+				a {
+					&:hover, &:focus {
+						color: white;
+						text-decoration: none;
+
+					}
+				}
+			}
+			a {
+				color: white;
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: .8em;
+				&:hover, &:focus {
+					color: $primary;
+				}
+			}
+		}
+	}
+}
+
+.navbar .btn {
+	margin-top: -2px;
+	padding: 0;
+	background: $primary;
+	@include transition(background ease-in, 0.4s);
+	&:hover {
+		background: lighten($primary, 10%);
+	}
+}
+
+.carousel-control {
+	line-height: 27px;
+}
+
+.left-arrow {
+	margin-right: 2px;
+}
+
+.right-arrow {
+	margin-left: 2px;
+}

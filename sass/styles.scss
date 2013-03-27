@@ -1,0 +1,14 @@
+$primary: #1ABC9C;
+$secondary: #16A085;
+$lightGray: #ECF0F1;
+$darkGray: #BDC3C7;
+
+// I gather this file is a starting point for the project.
+@import "bootstrap";
+
+// Include responsive Bootstrap styles
+@import "bootstrap-responsive";
+
+@import "header";
+
+@import "global";
